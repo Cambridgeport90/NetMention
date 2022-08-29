@@ -1,0 +1,21 @@
+    ## Objectives
+
+    This document is to outline the purpose and benefits of a PowerShell webmention sender for the command line... now, I understand that there are a lot of these, but most of them have been written in other languages such as Python, PHP, and static HTML. The .NET ecosystem is ill-represented in the Indieweb community. That gets fixed today. 
+
+    ## Application structure
+
+    the application has three components:
+
+    - A PowerShell module that performs the actual functionality
+    - An optional graphical user interface (in either WPF or blazer; documentation will be updated when the option is decided; depends on the need for the application to support various platforms.)
+    - A Windows service (probably a WCF service) that polls and sends webmentions. 
+
+    ## areas of Application
+
+    this software could be used in several ways:
+
+    - As part of a greater workflow made by something like PowerAutomate, using it's scripting facilities by themselves when combined with other actions (It's pure PowerShell, after all, examples coming as they enter my brain.)
+    - As one of the services driving an asp.net core application (Indieweb-first CMS written in Blazer, perhaps)
+    - It's PowerShell module could be re-used in a desktop client for the IndieWeb (sort of like what <a href="https://micro.blog/manton">@manton</ does with [his blogging client](https://micro.blog/). 
+
+    this file will be updated as time goes on to reflect additions and edits as they happen. 
